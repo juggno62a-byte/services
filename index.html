@@ -3,126 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sultan Services | Guest Posting & Content Writing</title>
+    <title>Sultan Services | Global Guest Posting Authority</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --primary-color: #f1c40f; --gold-color: #FFD700; --dark-color: #1a1a1a; --light-grey: #f9f9f9; }
-        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; scroll-behavior: smooth; }
+        :root { --gold: #FFD700; --dark-bg: #0f0f0f; --card-bg: #1a1a1a; --text-gray: #b0b0b0; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background: #050505; color: #fff; scroll-behavior: smooth; }
         
-        header { background: var(--dark-color); color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-
-        /* Golden Logo Design */
+        /* Header & Navigation */
+        header { background: rgba(15, 15, 15, 0.95); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
         .sultan-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-icon { background: linear-gradient(135deg, #FFD700, #B8860B); color: #000; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 22px; border-radius: 8px; box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); }
-        .logo-text { font-weight: 800; font-size: 22px; color: var(--gold-color); letter-spacing: 1px; line-height: 1; }
-        .logo-text span { color: #fff; font-weight: 400; font-size: 14px; display: block; margin-top: 2px; }
-        
-        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.9rem; font-weight: 500; transition: 0.3s; }
-        nav a:hover { color: var(--primary-color); }
+        .logo-icon { background: linear-gradient(135deg, #FFD700, #B8860B); color: #000; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 24px; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
+        .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 22px; color: var(--gold); letter-spacing: 1px; }
+        .logo-text span { color: #fff; font-size: 14px; font-weight: 400; display: block; }
+        nav a { color: #fff; text-decoration: none; margin-left: 25px; font-size: 14px; font-weight: 500; transition: 0.3s; text-transform: uppercase; }
+        nav a:hover { color: var(--gold); }
 
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1350&q=80'); background-size: cover; height: 60vh; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
-        
-        .btn { padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; margin: 10px; display: inline-block; border: none; cursor: pointer; }
-        .btn-primary { background: var(--primary-color); color: black; }
-        .btn-secondary { background: transparent; border: 2px solid white; color: white; }
+        /* Hero Section */
+        .hero { height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%); padding: 0 10%; }
+        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: 4rem; margin-bottom: 15px; background: linear-gradient(to right, #fff, var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.2rem; color: var(--text-gray); max-width: 700px; margin-bottom: 30px; }
+        .hero-btns .btn { padding: 15px 35px; border-radius: 50px; font-weight: bold; text-decoration: none; transition: 0.4s; display: inline-block; margin: 10px; }
+        .btn-gold { background: var(--gold); color: #000; }
+        .btn-gold:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); }
 
-        section { padding: 60px 10%; }
-        .section-title { text-align: center; margin-bottom: 40px; }
-        .section-title h2 { font-size: 2.5rem; border-bottom: 4px solid var(--primary-color); display: inline-block; padding-bottom: 10px; }
+        /* Stats Section (Intro Blogs replacement) */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 60px 8%; margin-top: -50px; }
+        .stat-card { background: var(--card-bg); padding: 30px; border-radius: 15px; border: 1px solid #333; text-align: center; transition: 0.3s; }
+        .stat-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .stat-card h3 { color: var(--gold); font-size: 2rem; margin: 0; }
+        .stat-card p { color: var(--text-gray); font-size: 14px; margin-top: 10px; }
 
-        .content-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .content-card { background: var(--light-grey); padding: 30px; border-radius: 10px; text-align: center; transition: 0.3s; }
-        .content-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        /* Services Section */
+        .section-padding { padding: 80px 8%; text-align: center; }
+        .section-title { font-size: 2.5rem; margin-bottom: 50px; color: #fff; }
+        .section-title span { color: var(--gold); }
 
-        .table-container { overflow-x: auto; }
-        .inventory-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
-        .inventory-table th { background: var(--dark-color); color: white; padding: 15px; text-align: left; }
-        .inventory-table td { padding: 15px; border-bottom: 1px solid #ddd; text-align: left; }
+        /* Inventory Table */
+        .table-container { background: var(--card-bg); padding: 20px; border-radius: 20px; overflow-x: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #111; color: var(--gold); padding: 20px; text-align: left; text-transform: uppercase; font-size: 13px; }
+        td { padding: 20px; border-bottom: 1px solid #222; color: var(--text-gray); }
+        tr:hover { background: rgba(255, 215, 0, 0.05); }
+        .badge { background: rgba(255, 215, 0, 0.1); color: var(--gold); padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
 
-        footer { background: var(--dark-color); color: white; text-align: center; padding: 40px 10%; }
-        
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 14px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: bold; }
+        /* WhatsApp Floating */
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; transition: 0.3s; }
+        .wa-float:hover { transform: scale(1.1); }
+
+        footer { padding: 50px 8%; border-top: 1px solid #222; text-align: center; color: var(--text-gray); }
     </style>
 </head>
 <body>
 
-<a href="https://wa.me/923066572333" class="whatsapp-float" target="_blank">Chat</a>
+<a href="https://wa.me/923066572333" class="wa-float" target="_blank">W</a>
 
 <header>
-    <div class="sultan-logo">
+    <a href="#" class="sultan-logo">
         <div class="logo-icon">S</div>
         <div class="logo-text">SULTAN <span>SERVICES</span></div>
-    </div>
+    </a>
     <nav>
         <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#inventory">Inventory</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">Performance</a>
+        <a href="#inventory">Websites</a>
+        <a href="https://wa.me/923066572333">Contact</a>
     </nav>
 </header>
 
-<div id="home" class="hero">
-    <h1>Sultan Services</h1>
-    <p>Premium Guest Posting & SEO Content Solutions</p>
-    <div>
-        <a href="https://wa.me/923066572333" class="btn btn-primary">WhatsApp Us</a>
-        <a href="#inventory" class="btn btn-secondary">View Inventory</a>
+<div class="hero" id="home">
+    <h1>Dominate Search Results</h1>
+    <p>We provide high-quality Guest Posting and SEO Content services that help brands rank higher, drive organic traffic, and build authority in their niche.</p>
+    <div class="hero-btns">
+        <a href="#inventory" class="btn btn-gold">View Inventory</a>
+        <a href="https://wa.me/923066572333" class="btn" style="border: 1px solid #fff; color: #fff;">Contact Us</a>
     </div>
 </div>
 
-<section id="services">
-    <div class="section-title">
-        <h2>Our Services</h2>
+<div class="stats-grid" id="about">
+    <div class="stat-card">
+        <h3>500+</h3>
+        <p>Premium Websites in Inventory</p>
     </div>
-    <div class="content-grid">
-        <div class="content-card">
-            <h3>Article Writing</h3>
-            <p>High-quality, SEO-optimized articles that boost rankings and engage readers.</p>
-        </div>
-        <div class="content-card">
-            <h3>Guest Posting</h3>
-            <p>Permanent backlinks from high-authority niche sites to improve your domain authority.</p>
-        </div>
+    <div class="stat-card">
+        <h3>100%</h3>
+        <p>Index Guarantee in Google</p>
     </div>
-</section>
+    <div class="stat-card">
+        <h3>High DA/DR</h3>
+        <p>Sites with 50+ Domain Authority</p>
+    </div>
+    <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Active Support for Clients</p>
+    </div>
+</div>
 
-<section id="inventory" style="background: var(--light-grey);">
-    <div class="section-title">
-        <h2>Website Inventory</h2>
-    </div>
+<section class="section-padding" id="inventory">
+    <h2 class="section-title">Premium <span>Website Inventory</span></h2>
     <div class="table-container">
-        <table class="inventory-table">
+        <table>
             <thead>
                 <tr>
-                    <th>Niche</th>
-                    <th>DA</th>
-                    <th>Price</th>
+                    <th>Category / Niche</th>
+                    <th>DA Score</th>
+                    <th>DR Score</th>
+                    <th>Traffic</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Tech / Business</td>
-                    <td>50+</td>
-                    <td><strong>$45</strong></td>
-                </tr>
-                <tr>
-                    <td>Health & Fitness</td>
-                    <td>55+</td>
-                    <td><strong>$40</strong></td>
-                </tr>
-                <tr>
-                    <td>Fashion & Lifestyle</td>
-                    <td>48+</td>
-                    <td><strong>$35</strong></td>
-                </tr>
+                <tr><td><span class="badge">Technology</span></td><td>60+</td><td>55+</td><td>50k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
+                <tr><td><span class="badge">Health & Fitness</span></td><td>55+</td><td>50+</td><td>30k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
+                <tr><td><span class="badge">Business & Finance</span></td><td>65+</td><td>60+</td><td>80k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
+                <tr><td><span class="badge">Fashion & Lifestyle</span></td><td>50+</td><td>45+</td><td>20k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
+                <tr><td><span class="badge">Digital Marketing</span></td><td>58+</td><td>52+</td><td>40k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
+                <tr><td><span class="badge">Real Estate</span></td><td>52+</td><td>48+</td><td>15k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
+                <tr><td><span class="badge">Travel & Food</span></td><td>55+</td><td>50+</td><td>25k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
             </tbody>
         </table>
     </div>
 </section>
 
-<footer id="contact">
-    <p>Contact: info@sultanservices.com | WhatsApp: +92 306 6572333</p>
-    <p>&copy; 2026 Sultan Services. All Rights Reserved.</p>
+<footer>
+    <p>&copy; 2026 Sultan Services. Elevating Your Digital Presence Globally.</p>
+    <p style="font-size: 12px; margin-top: 10px;">Email: info@sultanservices.com | WhatsApp: +92 306 6572333</p>
 </footer>
 
 </body>
