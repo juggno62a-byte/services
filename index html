@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultan Services | SEO & Content Experts</title>
+    <style>
+        :root { --gold: #FFD700; --bg: #000; --card: #161616; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); color: #fff; line-height: 1.6; }
+        header { background: #111; padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--gold); }
+        .container { padding: 40px 5%; max-width: 1100px; margin: auto; }
+        h2 { color: var(--gold); text-align: center; font-size: 32px; margin-bottom: 30px; }
+        
+        /* 3 Equal Boxes Setup */
+        .services-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .service-card { background: var(--card); padding: 30px; border-radius: 12px; border: 1px solid #333; width: 300px; flex: 1 1 300px; text-align: center; border-top: 5px solid var(--gold); display: flex; flex-direction: column; justify-content: space-between; }
+        .service-card h3 { color: var(--gold); margin-top: 0; }
+        .btn-hire { background: var(--gold); color: #000; padding: 12px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 20px; display: block; transition: 0.3s; }
+        .btn-hire:hover { opacity: 0.8; }
+
+        /* 10 Niches Table Setup */
+        .table-scroll { overflow-x: auto; margin: 40px 0; background: #111; border-radius: 12px; border: 1px solid #333; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #222; }
+        th { background: var(--gold); color: #000; font-weight: bold; }
+        .niche-tag { background: #222; color: var(--gold); padding: 5px 10px; border-radius: 5px; font-size: 13px; border: 1px solid var(--gold); font-weight: bold; }
+
+        /* Contact Form */
+        .contact-form { background: var(--card); padding: 40px; border-radius: 15px; margin-top: 50px; border: 1px solid #333; }
+        input, textarea { width: 100%; padding: 15px; margin: 10px 0; background: #000; color: #fff; border: 1px solid #444; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
+        .btn-send { background: var(--gold); color: #000; border: none; padding: 18px; width: 100%; font-weight: bold; cursor: pointer; border-radius: 8px; font-size: 18px; margin-top: 10px; }
+        
+        footer { text-align: center; padding: 40px; color: #666; font-size: 14px; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color: var(--gold); margin: 0; font-size: 40px;">SULTAN SERVICES</h1>
+    <p style="font-size: 18px; margin-top: 10px;">High-Quality Guest Posting & Article Writing Services</p>
+</header>
+
+<div class="container">
+    <section id="services">
+        <h2>Article Writing Solutions</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>SEO Articles</h3>
+                <p>Human-written, keyword-optimized content designed to rank your website on the first page of Google.</p>
+            </div>
+            <div class="service-card">
+                <h3>Guest Post Content</h3>
+                <p>High-quality, informative articles tailored for authority outreach and premium backlink building.</p>
+            </div>
+            <div class="service-card">
+                <h3>Hire Professional</h3>
+                <p>Need custom word counts or bulk orders? We offer articles from 500 to 3000+ words.</p>
+                <a href="#contact" class="btn-hire">Hire a Writer</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="niches">
+        <br><br>
+        <h2>Our 10+ Premium Niches</h2>
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Niche Category</th>
+                        <th>DA</th>
+                        <th>DR</th>
+                        <th>Monthly Traffic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="niche-tag">Technology</span></td><td>60+</td><td>55+</td><td>100k+</td></tr>
+                    <tr><td><span class="niche-tag">Business & SaaS</span></td><td>65+</td><td>62+</td><td>85k+</td></tr>
+                    <tr><td><span class="niche-tag">Health & Fitness</span></td><td>55+</td><td>52+</td><td>45k+</td></tr>
+                    <tr><td><span class="niche-badge">Finance</span></td><td>70+</td><td>65+</td><td>150k+</td></tr>
+                    <tr><td><span class="niche-tag">Fashion & Beauty</span></td><td>52+</td><td>50+</td><td>60k+</td></tr>
+                    <tr><td><span class="niche-tag">Real Estate</span></td><td>58+</td><td>54+</td><td>25k+</td></tr>
+                    <tr><td><span class="niche-tag">Education</span></td><td>60+</td><td>55+</td><td>110k+</td></tr>
+                    <tr><td><span class="niche-tag">Travel</span></td><td>54+</td><td>50+</td><td>35k+</td></tr>
+                    <tr><td><span class="niche-tag">Home Decor</span></td><td>55+</td><td>52+</td><td>30k+</td></tr>
+                    <tr><td><span class="niche-tag">Automotive</span></td><td>50+</td><td>45+</td><td>25k+</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Start Your Order</h2>
+        <p style="text-align: center;">WhatsApp: +92 306 6572333 | Email: sultanservices101@gmail.com</p>
+        <form action="https://formspree.io/f/xlgboeqo" method="POST">
+            <input type="text" name="name" placeholder="Enter Your Full Name" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <textarea name="message" rows="5" placeholder="Describe your order details (Niche, Word count, etc.)" required></textarea>
+            <button type="submit" class="btn-send">SEND ORDER DETAILS</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Sultan Services | All Rights Reserved | Expert SEO Solutions
+</footer>
+
+</body>
+</html>
